@@ -6,7 +6,10 @@
     box-sizing: border-box;
     margin: 0;
 }
-
+body{
+    overflow-x: hidden;
+    max-width: 100vw;
+}
 .container{
     width: 90%;
     padding: 5px 15px;
@@ -94,6 +97,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        overflow: hidden;
     }
     hr{
         color: #0FE2CA;
@@ -103,7 +107,11 @@
         display: flex;
         justify-content: space-around;
         margin-left: 100%;
+        overflow: hidden;
         transition: 1s;
+    }
+    #one:checked ~ .maincard .module.two{
+        display: none;
     }
     #two:checked ~ .maincard{
         margin-left: -100%;
