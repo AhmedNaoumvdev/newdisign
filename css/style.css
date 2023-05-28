@@ -130,6 +130,7 @@ body{
     }
     .module{
         padding: 12px;
+        font-weight: 500;
     }
     .module a{
         text-decoration: none;
