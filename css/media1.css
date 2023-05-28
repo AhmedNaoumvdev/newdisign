@@ -1,0 +1,59 @@
+
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    nav{
+        position: relative;
+    }
+    nav ul{
+        position: absolute;
+        right:0;
+        top: 100%;
+        background-color:#0FE2CA;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: none;
+        z-index: 1;
+    }
+    #ddt:checked ~ .container nav ul{
+        display: flex;
+    }
+    nav li{
+        padding: 20px;
+        width: 400px;
+    }
+    nav li:hover{
+        background-color: black;
+        color: #0FE2CA;
+    }
+    
+    nav h2{
+        display: contents;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .humberger{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 25px;
+        cursor: pointer;
+    }
+    .humberger .line{
+        width: 45px;
+        background-color: black;
+        height: 5px;
+        border-radius: 20px;
+    }
+    .home .gif img{
+        display: none;
+    }
+}
