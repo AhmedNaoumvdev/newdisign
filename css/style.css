@@ -5,6 +5,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     overflow-x: hidden;
@@ -27,14 +28,19 @@ body{
         align-items: center;
         justify-content: space-between;
     }
+    nav a{
+        text-decoration: none;
+    }
+    nav a:visited{
+        color: inherit;
+    }
     nav ul{
         list-style: none;
         display: flex;
     }
-    nav li:nth-child(odd){
-        margin: 0 15px ;
-    }
+    
     nav li{
+        margin-left: 15px;
         cursor: pointer;
         font-size: 20px;
     }
@@ -74,9 +80,9 @@ body{
         font-size: 25px;
     }
     .home button{
-        width: 100px;
-        height: 35px;
-        font-size: 15px;
+        width: 150px;
+        height: 45px;
+        font-size: 20px;
         margin-top: 10px;
         border-radius: 20px;
         border-style: none;
@@ -189,8 +195,5 @@ body{
     footer p span{
         
         font-size: 25px;
-    }
-    footer p:hover{
-        background-color: #0B0C0F;
     }
 /*end info section*/
