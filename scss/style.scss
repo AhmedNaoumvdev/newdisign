@@ -1,0 +1,205 @@
+/*global rules*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    max-width: 50vw;
+}
+.container{
+    width: 90%;
+    padding: 5px 15px;
+    margin: 0 auto;
+}
+/*end global rules*/
+    
+/*header*/
+    header{
+        color: #0B0C0F;
+        background-color: #0FE2CA;
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+            }
+            a:visited{
+                color: inherit;
+            }
+            ul{
+                list-style: none;
+                display: flex;
+            }
+            
+            li{
+                margin-left: 15px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+            
+            img{
+                width: 50px;
+            }
+            .humberger{
+                display: none;
+            }
+            h2{
+                display: none;
+            }
+        }
+        
+    }
+    
+
+/*end header*/
+/*section home*/
+
+    .home {
+        text-align: center;
+        color: #0B0C0F;
+        background-color: #0FE2CA;
+        h1{
+        font-size: 40px;
+        margin: 10px 0 15px;
+        }
+        .gif{
+            display: flex;
+            justify-content: space-around;
+        }
+        .para{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .para{
+            font-size: 25px;
+        }
+        button{
+            width: 150px;
+            height: 45px;
+            font-size: 20px;
+            margin-top: 10px;
+            border-radius: 20px;
+            border-style: none;
+            background-color: #0B0C0F;
+            color: #0FE2CA;
+            cursor: pointer;
+                    
+        }
+    }
+    
+/*end ssection home*/
+
+/*first year section*/
+    .first{
+        background-color: #0B0C0F;
+        color: #0FE2CA;
+        
+        .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        overflow: hidden;
+        }
+        
+        .maincard{
+            width: 200%;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 100%;
+            overflow: hidden;
+            transition: 1s;
+
+            #one:checked ~ .maincard .module.two{
+                display: none;
+            }
+            #two:checked ~ .maincard{
+                margin-left: -100%;
+            }
+            .modules{
+                border-radius: 20px;
+                border: 5px solid ;
+                width: 45%;
+                text-align: center;
+                hr{
+                    color: #0FE2CA;
+                }
+                .module{
+                    padding: 12px;
+                    font-weight: 500;
+                    a{
+                        text-decoration: none;
+                    }
+                    a:visited{
+                        color: inherit;
+                    }
+                }
+            }
+        }
+        .semesters{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            padding: 3px;
+            border-radius: 15px;
+            margin-bottom: 5px;
+
+            label{
+            background-color: #0FE2CA;
+            color: #0B0C0F;
+            border-radius: 15px;
+            padding: 3px;
+            transition: 1s;
+            }
+            #one:checked ~ .semesters label:last-child{
+                background-color: #0B0C0F;
+                color: #0FE2CA;
+            }
+            #two:checked ~ .semesters label:first-child{
+                background-color: #0B0C0F;
+                color: #0FE2CA;
+            }
+            h3:first-child{
+                margin-right: 5px;
+            }
+        }
+        
+        input{
+            display: none;
+        }
+    }
+    
+
+
+/*end first year section*/
+
+/*second year section*/
+    .second{
+        background-color: #0B0C0F;
+        color: #0FE2CA;
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+/*end second year section*/
+/*info section*/
+    .info{
+        background-color: #0FE2CA;
+        color: #0B0C0F;
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        footer p span{
+            font-size: 25px;
+        }
+    }
+/*end info section*/

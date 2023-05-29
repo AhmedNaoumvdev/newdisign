@@ -1,200 +1,244 @@
-
-
-
 /*global rules*/
-*{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    overflow-x: hidden;
-    max-width: 100vw;
+
+body {
+  overflow-x: hidden;
+  max-width: 50vw;
 }
-.container{
-    width: 90%;
-    padding: 5px 15px;
-    margin: 0 auto;
+
+.container {
+  width: 90%;
+  padding: 5px 15px;
+  margin: 0 auto;
 }
+
 /*end global rules*/
-    
 /*header*/
-    header{
-        color: #0B0C0F;
-        background-color: #0FE2CA;
-    }
-    nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    nav a{
-        text-decoration: none;
-    }
-    nav a:visited{
-        color: inherit;
-    }
-    nav ul{
-        list-style: none;
-        display: flex;
-    }
-    
-    nav li{
-        margin-left: 15px;
-        cursor: pointer;
-        font-size: 20px;
-    }
-    
-    nav img{
-        width: 50px;
-    }
-    .humberger{
-        display: none;
-    }
-    nav h2{
-        display: none;
-    }
+header {
+  color: #0B0C0F;
+  background-color: #0FE2CA;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header nav a {
+  text-decoration: none;
+}
+header nav a:visited {
+  color: inherit;
+}
+header nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header nav li {
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+header nav img {
+  width: 50px;
+}
+header nav .humberger {
+  display: none;
+}
+header nav h2 {
+  display: none;
+}
 
 /*end header*/
 /*section home*/
+.home {
+  text-align: center;
+  color: #0B0C0F;
+  background-color: #0FE2CA;
+}
+.home h1 {
+  font-size: 40px;
+  margin: 10px 0 15px;
+}
+.home .gif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.home .para {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .para {
+  font-size: 25px;
+}
+.home button {
+  width: 150px;
+  height: 45px;
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border-style: none;
+  background-color: #0B0C0F;
+  color: #0FE2CA;
+  cursor: pointer;
+}
 
-    .home {
-        text-align: center;
-        color: #0B0C0F;
-        background-color: #0FE2CA;
-    }
-    .home h1{
-        font-size: 40px;
-        margin: 10px 0 15px;
-    }
-    .home .gif{
-        display: flex;
-        justify-content: space-around;
-    }
-    .home .para{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .home .para{
-        font-size: 25px;
-    }
-    .home button{
-        width: 150px;
-        height: 45px;
-        font-size: 20px;
-        margin-top: 10px;
-        border-radius: 20px;
-        border-style: none;
-        background-color: #0B0C0F;
-        color: #0FE2CA;
-        cursor: pointer;
-                
-    }
 /*end ssection home*/
-
 /*first year section*/
-    .first{
-        background-color: #0B0C0F;
-        color: #0FE2CA;
-    }
-    .first .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        overflow: hidden;
-    }
-    hr{
-        color: #0FE2CA;
-    }
-    .maincard{
-        width: 200%;
-        display: flex;
-        justify-content: space-around;
-        margin-left: 100%;
-        overflow: hidden;
-        transition: 1s;
-    }
-    #one:checked ~ .maincard .module.two{
-        display: none;
-    }
-    #two:checked ~ .maincard{
-        margin-left: -100%;
-    }
-    .modules{
-        border-radius: 20px;
-        border: 5px solid ;
-        width: 45%;
-        text-align: center;
-    }
-    .module{
-        padding: 12px;
-        font-weight: 500;
-    }
-    .module a{
-        text-decoration: none;
-    }
-    .module a:visited{
-        color: inherit;
-    }
-    .semesters{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: fit-content;
-        padding: 3px;
-        border-radius: 15px;
-        margin-bottom: 5px;
-    }
-    .semesters label{
-        background-color: #0FE2CA;
-        color: #0B0C0F;
-        border-radius: 15px;
-        padding: 3px;
-        transition: 1s;
-    }
-    #one:checked ~ .semesters label:last-child{
-        background-color: #0B0C0F;
-        color: #0FE2CA;
-    }
-    #two:checked ~ .semesters label:first-child{
-        background-color: #0B0C0F;
-        color: #0FE2CA;
-    }
-    .semesters h3:first-child{
-        margin-right: 5px;
-    }
-    input{
-        display: none;
-    }
-
+.first {
+  background-color: #0B0C0F;
+  color: #0FE2CA;
+}
+.first .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+}
+.first .maincard {
+  width: 200%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 100%;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.first .maincard #one:checked ~ .maincard .module.two {
+  display: none;
+}
+.first .maincard #two:checked ~ .maincard {
+  margin-left: -100%;
+}
+.first .maincard .modules {
+  border-radius: 20px;
+  border: 5px solid;
+  width: 45%;
+  text-align: center;
+}
+.first .maincard .modules hr {
+  color: #0FE2CA;
+}
+.first .maincard .modules .module {
+  padding: 12px;
+  font-weight: 500;
+}
+.first .maincard .modules .module a {
+  text-decoration: none;
+}
+.first .maincard .modules .module a:visited {
+  color: inherit;
+}
+.first .semesters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+.first .semesters label {
+  background-color: #0FE2CA;
+  color: #0B0C0F;
+  border-radius: 15px;
+  padding: 3px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.first .semesters #one:checked ~ .semesters label:last-child {
+  background-color: #0B0C0F;
+  color: #0FE2CA;
+}
+.first .semesters #two:checked ~ .semesters label:first-child {
+  background-color: #0B0C0F;
+  color: #0FE2CA;
+}
+.first .semesters h3:first-child {
+  margin-right: 5px;
+}
+.first input {
+  display: none;
+}
 
 /*end first year section*/
-
 /*second year section*/
-    .second{
-        background-color: #0B0C0F;
-        color: #0FE2CA;
-    }
-    .second .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.second {
+  background-color: #0B0C0F;
+  color: #0FE2CA;
+}
+.second .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
 /*end second year section*/
 /*info section*/
-    .info{
-        background-color: #0FE2CA;
-        color: #0B0C0F;
-    }
-    .info .container{
-        display: flex;
-        justify-content: center;
-    }
-    footer p span{
-        
-        font-size: 25px;
-    }
+.info {
+  background-color: #0FE2CA;
+  color: #0B0C0F;
+}
+.info .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.info footer p span {
+  font-size: 25px;
+}
+
 /*end info section*/
